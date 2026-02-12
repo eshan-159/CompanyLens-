@@ -1964,7 +1964,7 @@ Vote for features you want on our GitHub Discussions page!
 
 ---
 
-### Built with ❤️ and AI
+
 
 **Made by Eshan** | [GitHub](https://github.com/eshan-159) | [LinkedIn](https://linkedin.com/in/eshan)
 
