@@ -706,42 +706,42 @@ CompanyLens employs a modular, pipeline-based architecture designed for scalabil
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│                      CompanyLens Platform                         │
-│                                                                   │
-│  ┌────────────────────┐         ┌──────────────────────┐        │
+│                      CompanyLens Platform                        │
+│                                                                  │
+│  ┌────────────────────┐         ┌──────────────────────┐         │
 │  │   Input Layer      │         │   Output Layer        │        │
 │  │                    │         │                       │        │
 │  │  • CSV Files       │         │  • Excel Reports      │        │
 │  │  • Excel Files     │         │  • JSON Exports       │        │
 │  │  • Web Uploads     │         │  • API Responses      │        │
-│  └──────────┬─────────┘         └───────────▲──────────┘        │
+│  └──────────┬─────────┘         └───────────▲──────────┘         │
 │             │                               │                    │
 │             ▼                               │                    │
-│  ┌──────────────────────────────────────────┴──────────────┐   │
-│  │              Processing Pipeline                         │   │
-│  │                                                          │   │
-│  │  1. Data Validation  →  2. Website Search  →            │   │
-│  │  3. Content Crawling  →  4. AI Processing  →            │   │
-│  │  5. Classification  →  6. Export Generation             │   │
-│  └──────────────────────────────────────────────────────────┘  │
+│  ┌──────────────────────────────────────────┴──────────────┐     │
+│  │              Processing Pipeline                        │     │
+│  │                                                         │     │
+│  │  1. Data Validation  →  2. Website Search  →            │     │
+│  │  3. Content Crawling  →  4. AI Processing  →            │     │
+│  │  5. Classification  →  6. Export Generation             │     │
+│  └─────────────────────────────────────────────────────────┘     │
 │                                                                  │
-│  ┌────────────────────┐  ┌───────────────────┐  ┌────────────┐│
-│  │  Interface Layer   │  │  Execution Layer  │  │ Data Layer ││
-│  │                    │  │                   │  │            ││
-│  │  • Web UI (React) │  │  • Python Backend │  │ • SQLite   ││
-│  │  • CLI Tools      │  │  • Node.js Server │  │ • File I/O ││
-│  │  • API Endpoints  │  │  • Worker Queue   │  │ • Cache    ││
-│  └────────────────────┘  └───────────────────┘  └────────────┘│
+│  ┌────────────────────┐  ┌───────────────────┐  ┌────────────┐   │
+│  │  Interface Layer   │  │  Execution Layer  │  │ Data Layer │   │
+│  │                    │  │                   │  │            │   │
+│  │  • Web UI (React)  │  │  • Python Backend │  │ • SQLite   │   │
+│  │  • CLI Tools       │  │  • Node.js Server │  │ • File I/O │   │
+│  │  • API Endpoints   │  │  • Worker Queue   │  │ • Cache    │   │
+│  └────────────────────┘  └───────────────────┘  └────────────┘   │
 └──────────────────────────────────────────────────────────────────┘
 
 ┌──────────────────────────────────────────────────────────────────┐
-│                    External Services Layer                        │
-│                                                                   │
-│  ┌─────────────┐  ┌──────────────┐  ┌────────────────────────┐ │
-│  │ DuckDuckGo  │  │  Playwright  │  │    Groq AI Cloud       │ │
-│  │   Search    │  │   Browser    │  │  (Llama 3.1-8B)        │ │
-│  │             │  │  Automation  │  │                        │ │
-│  └─────────────┘  └──────────────┘  └────────────────────────┘ │
+│                    External Services Layer                       │
+│                                                                  │
+│  ┌─────────────┐  ┌──────────────┐  ┌────────────────────────┐   │
+│  │ DuckDuckGo  │  │  Playwright  │  │    Groq AI Cloud       │   │
+│  │   Search    │  │   Browser    │  │  (Llama 3.1-8B)        │   │
+│  │             │  │  Automation  │  │                        │   │
+│  └─────────────┘  └──────────────┘  └────────────────────────┘   │
 └──────────────────────────────────────────────────────────────────┘
 ```
 
