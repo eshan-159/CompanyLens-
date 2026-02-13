@@ -3,18 +3,21 @@ Configuration management for the company scraper pipeline.
 All settings are configurable via environment variables.
 """
 
+import logging
 import os
 from dataclasses import dataclass
 from typing import Optional
+
+logger = logging.getLogger("company_scraper")
 
 
 @dataclass
 class Config:
     """Configuration settings for the pipeline."""
     
-    # API Keys (required)
-    apify_api_token: str
-    llm_api_key: str
+    # API Keys
+    apify_api_token: Optional[str] = None  # Optional - DuckDuckGo used by default
+    llm_api_key: Optional[str] = None
     
     # LLM Settings
     llm_model: str = "gpt-4o-mini"
@@ -40,12 +43,17 @@ class Config:
     def from_env(cls) -> "Config":
         """Load configuration from environment variables."""
         apify_token = os.getenv("APIFY_API_TOKEN")
-        llm_key = os.getenv("LLM_API_KEY") or os.getenv("OPENAI_API_KEY")
+        llm_key = (os.getenv("GROQ_API_KEY") or 
+                   os.getenv("LLM_API_KEY") or 
+                   os.getenv("OPENAI_API_KEY"))
         
+        # APIFY is optional - DuckDuckGo used by default
         if not apify_token:
-            raise ValueError("APIFY_API_TOKEN environment variable is required")
+            logger.info("APIFY_API_TOKEN not set - using DuckDuckGo for search (free)")
+        
+        # LLM key is recommended but not strictly required for basic operation
         if not llm_key:
-            raise ValueError("LLM_API_KEY or OPENAI_API_KEY environment variable is required")
+            logger.warning("No LLM API key found. Set GROQ_API_KEY (free at https://console.groq.com/keys)")
         
         return cls(
             apify_api_token=apify_token,

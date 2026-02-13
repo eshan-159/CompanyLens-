@@ -17,6 +17,23 @@
 ---
 
 </div>
+---
+
+##  Frontend UI
+
+<img src="images/Screenshot 2026-02-13 at 5.48.32 PM.png" alt="Dazza Platform" width="800"/>
+
+
+
+---
+##  Demo Output
+
+
+
+<img src="images/Screenshot 2026-02-13 at 5.56.58 PM.png" alt="Dazza Platform" width="800"/>
+
+<img src="images/Screenshot 2026-02-13 at 5.56.37 PM.png" alt="Dazza Platform" width="800"/>
+---
 
 ## 📖 Table of Contents
 
@@ -1958,11 +1975,6 @@ Vote for features you want on our GitHub Discussions page!
 
 <div align="center">
 
-## 🌟 Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=eshan-159/CompanyLens-&type=Date)](https://star-history.com/#eshan-159/CompanyLens-&Date)
-
----
 
 
 
