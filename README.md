@@ -56,9 +56,15 @@
 
 ## 🎯 Overview
 
-CompanyLens is an enterprise-grade, AI-powered automation platform designed to transform raw company names into comprehensive, structured business intelligence. By leveraging **Groq's ultra-fast Llama 3.1 language model**, CompanyLens delivers professional company profiles at unprecedented scale—processing data 100 times faster than traditional manual research methods.
+Turn raw company names into clean, structured business intelligence — automatically.
 
-In today's fast-paced business environment, gathering accurate company information is a time-consuming bottleneck. Whether you're building investor databases, conducting market research, enriching CRM data, or performing competitive analysis, CompanyLens automates the entire workflow from company name to structured intelligence report.
+1.Powered by Groq's ultra-fast Llama 3.1 to generate professional company profiles at   
+  scale (≈100× faster than manual research).
+
+2.Outputs ready-to-ingest JSON for investor databases, market research, CRM enrichment, 
+  and competitive analysis.
+
+3.Enterprise-grade: high throughput, API-first, and production-ready.
 
 ### Core Value Proposition
 
