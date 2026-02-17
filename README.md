@@ -56,7 +56,7 @@
 
 ## 🎯 Overview
 
-Turn raw company names into clean, structured business intelligence — automatically.
+Turn  company names into clean, structured business intelligence — automatically.
 
 1.Powered by Groq's ultra-fast Llama 3.1 to generate professional company profiles at   
   scale (≈100× faster than manual research).
